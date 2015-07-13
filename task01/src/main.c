@@ -31,9 +31,9 @@ int main()
                 exit(EXIT_FAILURE);
         } 
 	
-//	if(fork()){
-//	printf("fork: %d %d\n", iret1,iret2);
-//	}
+	if(fork()){
+	printf("fork: %d %d\n", iret1,iret2);
+	}
  
 	printf("pthread_create() for thread 1 returns: %d\n",iret1);
 	printf("pthread_create() for thread 2 returns: %d\n", iret2);
